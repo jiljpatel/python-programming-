@@ -5,7 +5,7 @@ def write_into_csv(info_list):
     with open('stu_info.csv','a',newline='') as csv_file:
         writer = csv.writer(csv_file)
 
-    if csv_file.tell() == 0:  
+    if csv_file.tell() ==0:  
        writer.writerow(["Name","Age","Contact_Number","E-mail"])
 
     writer.writerow(info_list)     
